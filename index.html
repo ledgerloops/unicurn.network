@@ -9,6 +9,10 @@
   </head>
   <body>
     <h2>Unicurn Network</h2>
+    <p>The Unicurn Network is a peer-to-peer money network. Participants only interact with their direct network neighbors, but money can flow through the network in loops. The easiest way to join is to run an instance of <a href="https://github.com/ledgerloops/nlt-kit">NLT-KIT</a>, or to register at <a href="https://michiels-nlt-kit.herokuapp.com">https://michiels-nlt-kit.herokuapp.com</a>.
+    <p>How network neighbors interact with each other is up to them, and if groups of participants find benefit in certain multi-hop arrangements, then that's up to them. But two types of multi-hop pattern are explicitly encouraged: UCR-denoted circular payments (with hard or soft timeout), and landmark broadcasts.</p>
+    <p>Transactions should mention at least one landmark, to help each node decide where to route it next. Landmark broadcasts should mention the current limit in UCRs the announcing node is willing to receive from/forward to that landmark.</p>
+    <p>That way, if a node remembers the broadcasts it gets from its different neighbors, it will know both what landmarks to include when starting a loop desiggned to top up a specific trustline, and it will know which neighbor (if any) it  can try to forward conditional transfers to, by matching landmarks mentioned on the transfer, and landmarks its neighbors want to forward to.</p>
     <p>So far, the unicurn network has just one user: <a id="link" href="https://michiels-nlt-kit.herokuapp.com/profile/michiel">Michiel de Jong</a>.</p>
   </body>
   <script>
